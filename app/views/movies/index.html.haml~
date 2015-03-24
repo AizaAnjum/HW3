@@ -11,7 +11,7 @@
   %thead
     %tr
       %th{:class=>"hilite"}= link_to "Movie Title", movies_path(:sort_by=>"title", :ratings=>params[:ratings])
-      %th Rating
+      %th{}= link_to "Rating", movies_path(:sort_by=>"ratings", :ratings=>params[:ratings])
       %th{:class=>"hilite"}= link_to "Release Date", movies_path(:sort_by=>"release_date", :ratings=>params[:ratings])
       %th More Info
 
